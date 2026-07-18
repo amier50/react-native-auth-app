@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   SafeAreaView,
   KeyboardAvoidingView,
-  Platform
+  Platform,
+  Image
 } from "react-native";
 import { useContext } from "react";
 import { Alert } from "react-native";
@@ -51,7 +52,7 @@ export default function LoginScreen({ navigation }) {
       <SafeAreaView style={styles.container}>
         <View style={styles.card}>
           <Text style={styles.emoji}>
-              👋
+              <Image source={require('../../assets/icon.png')} style={styles.image} />
           </Text>
           <Text style={styles.title}>Welcome Back</Text>
           <Text style={styles.subtitle}>
@@ -104,12 +105,9 @@ const styles = StyleSheet.create({
 
   card: {
     backgroundColor: colors.surface,
-
     borderRadius: 24,
-
     paddingHorizontal: 24,
     paddingVertical: 36,
-
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
@@ -117,7 +115,6 @@ const styles = StyleSheet.create({
     },
     shadowOpacity: 0.08,
     shadowRadius: 20,
-
     elevation: 10,
   },
 
@@ -125,6 +122,12 @@ const styles = StyleSheet.create({
     fontSize: 44,
     textAlign: "center",
     marginBottom: 12,
+    alignSelf: "center",
+  },
+
+  image: {
+    width: 50, 
+    height: 50,
   },
 
   title: {

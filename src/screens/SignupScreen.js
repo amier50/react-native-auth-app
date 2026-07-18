@@ -6,7 +6,8 @@ import {
   TouchableOpacity,
   SafeAreaView,
   KeyboardAvoidingView,
-  Platform
+  Platform,
+  Image
 } from "react-native";
 import { useContext } from "react";
 import { Alert } from "react-native";
@@ -57,7 +58,10 @@ export default function SignupScreen({ navigation }) {
     >
       <SafeAreaView style={styles.container}>
         <View style={styles.card}>
-          <Text style={styles.title}>Create Account 🚀</Text>
+          <Text style={styles.emoji}>
+            <Image source={require('../../assets/icon.png')} style={styles.image} />
+          </Text>
+          <Text style={styles.title}>Create Account</Text>
           <Text style={styles.subtitle}>
             Sign up to get started
           </Text>
@@ -118,17 +122,31 @@ const styles = StyleSheet.create({
     elevation: 4,
   },
 
+  emoji: {
+    fontSize: 44,
+    textAlign: "center",
+    marginBottom: 12,
+    alignSelf: "center",
+  },
+
+  image: {
+    width: 50, 
+    height: 50,
+  },
+
   title: {
     fontSize: 28,
     fontWeight: "bold",
     color: colors.text,
     marginBottom: 8,
+    textAlign: "center",
   },
 
   subtitle: {
     fontSize: 16,
     color: "#666",
     marginBottom: 25,
+    textAlign: "center",
   },
 
   loginContainer: {
