@@ -161,6 +161,34 @@ Scan the QR code using Expo Go (SDK 54).
 
 ---
 
+## Screenshots
+
+### Login
+
+![Login](assets/login.png)
+
+### Signup
+
+![Signup](assets/signup.png)
+
+### Home
+
+![Home](assets/home.png)
+
+### Signup Success Message
+
+![Signup Success Message](assets/signupSuccess.png)
+
+### Login Invalid Credential
+
+![Login Invalid Credential](assets/loginInvalidCredential.png)
+
+### Password Visibility Toggle
+
+![Password Visibility Toggle](assets/passwordVisibilityToggle.png)
+
+---
+
 ## Implemented Requirements
 
 - React Context API
