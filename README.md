@@ -203,4 +203,5 @@ In a production environment, authentication would be handled by a secure backend
 ## Author
 
 Muhammad Khoirul Amier
+
 React Native Developer

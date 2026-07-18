@@ -45,7 +45,6 @@ export default function SignupScreen({ navigation }) {
     setLoading(false);
     if (result.success) {
       Alert.alert("Success", "Account created successfully!");
-      navigation.navigate("Login");
     } else {
       Alert.alert("Error", result.message);
     }

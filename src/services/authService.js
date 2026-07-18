@@ -30,6 +30,7 @@ export const signup = async (name, email, password) => {
     users.push(newUser);
 
     await saveUsers(users);
+    await saveCurrentUser(newUser);
 
     return {
       success: true,
