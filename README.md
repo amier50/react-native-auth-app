@@ -128,13 +128,13 @@ User Exists?
 Clone the repository
 
 ```bash
-git clone https://github.com/<your-username>/authflow.git
+git clone https://github.com/amier50/react-native-auth-app.git
 ```
 
 Navigate to the project
 
 ```bash
-cd authflow
+cd AuthApp
 ```
 
 Install dependencies
@@ -165,27 +165,27 @@ Scan the QR code using Expo Go (SDK 54).
 
 ### Login
 
-![Login](assets/login.png)
+![Login](assets/loginSmaller.png)
 
 ### Signup
 
-![Signup](assets/signup.png)
+![Signup](assets/signupSmaller.png)
 
 ### Home
 
-![Home](assets/home.png)
+![Home](assets/homeSmaller.png)
 
 ### Signup Success Message
 
-![Signup Success Message](assets/signupSuccess.png)
+![Signup Success Message](assets/signupSuccessSmaller.png)
 
 ### Login Invalid Credential
 
-![Login Invalid Credential](assets/loginInvalidCredential.png)
+![Login Invalid Credential](assets/loginInvalidCredentialSmaller.png)
 
 ### Password Visibility Toggle
 
-![Password Visibility Toggle](assets/passwordVisibilityToggle.png)
+![Password Visibility Toggle](assets/passwordVisibilityToggleSmaller.png)
 
 ---
 
